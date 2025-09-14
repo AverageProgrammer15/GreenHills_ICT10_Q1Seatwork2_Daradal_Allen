@@ -1,53 +1,87 @@
-/* ===== Custom Styles ===== */
+
 :root {
-  --accent: #0d6efd;
+  --accent: #0d6efd;       
+  --accent-light: #e7f1ff; 
   --muted: #6c757d;
+  --success: #198754;     
+  --danger: #dc3545;      
   --card-radius: 12px;
+  --bg-light: #f8f9fa;
 }
 
 body {
-  background: #f8f9fa;
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg-light);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   padding: 2rem 1rem;
+  line-height: 1.5;
+  color: #212529;
 }
+
 
 .brand {
   font-weight: 700;
   color: var(--accent);
 }
 
+/* Custom Card */
 .card-custom {
   border: none;
   border-radius: var(--card-radius);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  border-top: 4px solid var(--accent); 
 }
+
+
+h3.h6, .small strong {
+  color: var(--accent);
+}
+
 
 #delivery_status .badge {
   font-size: 0.8rem;
-  padding: 0.35rem 0.6rem;
-  border-radius: 999px;
+  padding: 0.35rem 0.65rem;
+  border-radius: 50px;
 }
+
+
+.badge-success {
+  background: var(--success);
+}
+.badge-danger {
+  background: var(--danger);
+}
+
 
 #allergens_list {
   padding-left: 1.2rem;
+  margin: 0.25rem 0;
 }
 
+
 #product_names .badge {
-  margin-right: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin: 0.2rem 0.25rem 0 0;
+  background: var(--accent-light);
+  color: var(--accent);
+}
+
+
+.bg-light {
+  background: var(--accent-light) !important;
+  border-left: 3px solid var(--accent);
 }
 
 footer {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   color: var(--muted);
   font-size: 0.9rem;
   text-align: center;
 }
 
+
 @media (min-width: 992px) {
   .container {
     max-width: 900px;
-    margin-top: 150px;
+    margin-top: 100px;
   }
 }
-
