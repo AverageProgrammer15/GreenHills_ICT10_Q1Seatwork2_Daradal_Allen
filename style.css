@@ -1,0 +1,53 @@
+/* ===== Custom Styles ===== */
+:root {
+  --accent: #0d6efd;
+  --muted: #6c757d;
+  --card-radius: 12px;
+}
+
+body {
+  background: #f8f9fa;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  padding: 2rem 1rem;
+}
+
+.brand {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.card-custom {
+  border: none;
+  border-radius: var(--card-radius);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+#delivery_status .badge {
+  font-size: 0.8rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+}
+
+#allergens_list {
+  padding-left: 1.2rem;
+}
+
+#product_names .badge {
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+footer {
+  margin-top: 1.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 900px;
+    margin-top: 150px;
+  }
+}
+
